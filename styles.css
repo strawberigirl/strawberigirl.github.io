@@ -21,12 +21,12 @@ body {
   transition: background-color 0.2s ease;
   width: 100%;
   max-width: 108px;
-  gap: 8px;
+  gap: 4px;
 }
 
 .toolbar-button .toolbar-button__icon {
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
   stroke: #7E8299;
   fill: none;
 }
