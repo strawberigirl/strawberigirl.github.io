@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 1rem;
+}
+
+/*Toolbar Button*/
+.toolbar-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  max-width: 108px;
+  gap: 8px;
+}
+
+.toolbar-button .toolbar-button__icon {
+  width: 48px;
+  height: 48px;
+  stroke: #7E8299;
+  fill: none;
+}
+
+.toolbar-button .toolbar-button__label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #5E6278;
+  text-align: center;
+}
+
+/*Hover state*/
+.toolbar-button:hover {
+  background-color: #F1F1F2;
+}
+
+/*Keyboard Accesibility*/
+.toolbar-button:focus-visible {
+  background-color: #F1F1F2; 
+  outline:2px solid #7E8299;
+}
+
+/*Toolbar Button Active State*/
+.toolbar-button.active{
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.toolbar-button.active .toolbar-button__icon{
+    fill: #1ABF7D;
+    stroke: none;
+}
+
+.toolbar-button.active .toolbar-button__label{
+    font-weight: 900;
+}
